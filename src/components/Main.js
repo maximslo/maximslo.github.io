@@ -24,7 +24,7 @@ const Main = () => {
       <ul className="links">
         <li><a href="https://www.linkedin.com/in/maximslo/">LinkedIn</a></li>
         <li><a href="https://github.com/maximslo">GitHub</a></li>
-        <li><a href="../public/MaximResume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Resume PDF in a new tab" className="resume-link">Resume</a></li>
+        <li><a href="./MaximResume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Resume PDF in a new tab" className="resume-link">Resume</a></li>
       </ul>
     </div>
   );
