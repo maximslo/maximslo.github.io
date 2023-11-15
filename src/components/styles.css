@@ -1,0 +1,73 @@
+body, html {
+    height: 100%; /* Ensure html also covers the full height */
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    height: 100vh; /* Use the full height of the viewport */
+    background-color: white;
+  }
+  
+  /* Make sure the body is a flex container that centers its children */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* min-height to ensure it's at least the height of the viewport */
+  }
+  
+  /* Ensure .App or your main wrapper has similar flex properties to center its children */
+  .App {
+    display: flex;
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Center text for all children */
+    width: 100%; /* Take up full container width */
+    min-height: 100vh; /* At least the viewport height */
+  }
+  
+  /* Style for the header/name section */
+  .header {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 4.5vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+  }
+  
+  /* Style for the About section */
+  .about {
+    font-weight: 300;
+    font-size: 1.5vw;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  /* Style for the social media and project links */
+  .links {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw; /* Space between items */
+  }
+  
+  .links li {
+    padding: 1vw 2vw;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: inherit; /* Inherits color from parent */
+    transition: color 0.3s ease;
+  }
+  
+  .links a:hover {
+    color: #007bff;
+  }
+
