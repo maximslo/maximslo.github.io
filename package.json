@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "http://maximslo.github.io",
+  "homepage": "https://maximslo.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
