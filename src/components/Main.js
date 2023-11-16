@@ -4,14 +4,15 @@ import image1 from './image1.png';
 import image2 from './image2.png';
 import cat from './cat.png';
 import bunny from './bunny.png';
+import seed from './seedling.png';
 
 
 const Main = () => {
   return (
     <div className="container">
-        {/* <div className="Img">
-            <img src={cat} alt="photo" width="100" height="100"/>
-        </div> */}
+        <div className="Img">
+            <img src={seed} alt="photo" width="100" height="100"/>
+        </div>
 
       <header className="header">
         Hi, my name is Maxim!
