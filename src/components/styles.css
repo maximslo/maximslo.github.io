@@ -46,6 +46,7 @@ body, html {
   .links {
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     font-size: 1.5vw;
