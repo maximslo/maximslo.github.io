@@ -108,7 +108,8 @@ body {
 
 @media screen and (max-width: 480px) {
   html, body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
+    overflow-y: hidden; /* Prevent horizontal scrolling */
   }
 
   body {
