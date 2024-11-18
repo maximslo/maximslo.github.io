@@ -1,3 +1,6 @@
+# Analytics Tracking
+https://analytics.google.com/analytics/web
+
 # When making updates:
 - npm run build
 - npm run deploy
