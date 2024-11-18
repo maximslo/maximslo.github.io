@@ -120,7 +120,7 @@ body {
   .container {
     margin: 0 auto; /* Center the content */
     padding: 0 10px; /* Ensure some padding for readability */
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   .Img img {
