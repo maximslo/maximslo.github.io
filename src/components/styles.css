@@ -115,6 +115,7 @@ body {
   body {
     margin: 0;
     padding: 0;
+    padding-bottom: 10px;
   }
 
   .container {
