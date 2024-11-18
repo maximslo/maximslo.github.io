@@ -1,75 +1,140 @@
 body, html {
-    height: 100%; /* Ensure html also covers the full height */
-    margin: 0;
-    padding: 0;
-    font-family: 'DM Sans', sans-serif;
-    height: 100vh; /* Use the full height of the viewport */
-    background-color: white;
-  }
-  
-  /* Make sure the body is a flex container that centers its children */
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+  background-color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-right: 40%;
+  padding-left: 2%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.Img {
+  margin-bottom: 20px;
+}
+
+.Img img {
+  width: 60px;
+  height: 60px;
+}
+
+.header {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: .85;
+  margin: 20px 0;
+}
+
+.about {
+  font-weight: 300;
+  font-size: 24px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 0 40px 0;
+}
+
+.links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.links li {
+  padding: 15px 30px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.links a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  font-size: 20px;  /* Default size for large screens */
+}
+
+.links a:hover {
+  color: #007bff;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* min-height to ensure it's at least the height of the viewport */
+    padding-right: 0; /* Remove padding for tablet */
+}
+
+  .Img img {
+      width: 40px;
+      height: 40px;
   }
   
-  /* Ensure .App or your main wrapper has similar flex properties to center its children */
-  .App {
-    display: flex;
-    align-items: center; /* Center children horizontally */
-    text-align: center; /* Center text for all children */
-    width: 100%; /* Take up full container width */
-    min-height: 100vh; /* At least the viewport height */
-  }
-  
-  /* Style for the header/name section */
   .header {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    font-size: 4vw;
-    font-weight: bold;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-  }
-  
-  /* Style for the About section */
-  .about {
-    font-weight: 300;
-    font-size: 1.5vw;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-  
-  /* Style for the social media and project links */
-  .links {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5vw;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1vw; /* Space between items */
-  }
-  
-  .links li {
-    padding: 1vw 2vw;
-    background: #f4f4f4;
-    color: #333;
-  }
-  
-  .links a {
-    text-decoration: none;
-    color: inherit; /* Inherits color from parent */
-    transition: color 0.3s ease;
-  }
-  
-  .links a:hover {
-    color: #007bff;
+      font-size: 55px;
   }
 
+  .about {
+      width: 60%;
+      font-size: 18px;
+  }
+
+  .links {
+      flex-direction: column;
+  }
+
+  .links a {
+    font-size: 16px;  /* Smaller size for tablets */
+}
+
+  .links li {
+      max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding-right: 0;
+  }
+
+  .Img img {
+      width: 40px;
+      height: 40px;
+  }
+  
+  .header {
+      font-size: 40px;
+  }
+
+  .about {
+      font-size: 16px;
+      width: 40% !important; /* Added !important and reduced width significantly */
+      max-width: 200px !important; /* Added !important and reduced max-width */
+  }
+
+  .links li {
+      width: 60%;
+  }
+
+  .links a {
+      font-size: 12px;
+  }
+
+  .container {
+      margin-left: 20px; /* Reduced margin for mobile */
+  }
+}
