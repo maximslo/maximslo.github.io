@@ -112,18 +112,17 @@ body {
   }
 
   .Img img {
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
   }
   
   .header {
-      font-size: 40px;
+      font-size: 55px;
   }
 
   .about {
-      font-size: 16px;
-      width: 40% !important; /* Added !important and reduced width significantly */
-      max-width: 200px !important; /* Added !important and reduced max-width */
+      font-size: 20px;
+      width: 80%;
   }
 
   .links li {
@@ -131,10 +130,10 @@ body {
   }
 
   .links a {
-      font-size: 12px;
+      font-size: 20px;
   }
 
   .container {
-      margin-left: 20px; /* Reduced margin for mobile */
+      margin-left: 5px; /* Reduced margin for mobile */
   }
 }
