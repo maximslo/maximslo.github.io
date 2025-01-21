@@ -15,7 +15,8 @@ const Main = () => {
       </header>
 
       <div className="about">
-        <p>I'm a senior at Boston University studying Computer Science, where I teach accessibility and algorithmic bias.</p>
+        <p>Building healthy news ecosystems. At Boston University I taught accessible web design, and algorithm bias.</p>
+
       </div>
 
       <ul className="links">
