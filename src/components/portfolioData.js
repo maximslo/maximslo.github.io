@@ -64,7 +64,7 @@ export const portfolioProjects = [
     whatIDid: "frontend web/mobile implementation",
     link: "https://www.nytimes.com/interactive/2024/dining/best-nyc-sandwiches.html",
     thumbnail: "",
-    video: "/videos/sand.mov"
+    video: "/videos/sand3.mov"
   },
   {
     id: 7,
