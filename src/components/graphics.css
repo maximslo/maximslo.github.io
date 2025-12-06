@@ -1,0 +1,351 @@
+/* Graphics Portfolio Styles */
+
+/* Override body padding for graphics page */
+body:has(.graphics-container) {
+  padding-right: 0;
+  padding-left: 0;
+  display: block;
+  background-color: #ffffff;
+}
+
+.graphics-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 80px;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.graphics-nav {
+  margin-bottom: 30px;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #007bff;
+}
+
+.graphics-header {
+  margin-bottom: 50px;
+}
+
+.graphics-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #000;
+}
+
+.bio {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2px;
+  max-width: 800px;
+}
+
+.contact-info {
+  font-size: 16px;
+  color: #666;
+  max-width: 800px;
+  margin-top: 2px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Portfolio Table */
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 80px 3fr 1.5fr 120px 120px 120px;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 2px solid #ddd;
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Standardize all column headers except SELECTED PROJECTS */
+.table-header .col-img,
+.table-header .col-source,
+.table-header .col-coding,
+.table-header .col-visuals,
+.table-header .col-reporting {
+  font-size: 11px;
+  font-weight: 500;
+  color: #999;
+}
+
+.table-header .col-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 80px 3fr 1.5fr 120px 120px 120px;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.table-row:hover {
+  background-color: #f9f9f9;
+}
+
+/* Column styles */
+.col-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-thumbnail {
+  width: 80px;
+  height: 45px;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+  background-color: #000;
+  border: 2px solid #eee;
+}
+
+.project-video,
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.thumbnail-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.col-title {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.project-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #007bff;
+}
+
+.col-source {
+  font-size: 14px;
+  color: #666;
+}
+
+.col-coding,
+.col-visuals {
+  display: flex;
+  align-items: center;
+}
+
+.col-reporting {
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+/* Contribution Bar */
+.contribution-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: #8b5cf6;
+  transition: width 0.3s ease;
+}
+
+/* Different colors for different contribution types */
+.col-coding .bar-fill {
+  background-color: #8b5cf6;
+}
+
+.col-visuals .bar-fill {
+  background-color: #8b5cf6;
+}
+
+.col-reporting .bar-fill {
+  background-color: #8b5cf6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .graphics-container {
+    padding: 30px 40px;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 60px 2fr 1.5fr 100px 100px 100px;
+    gap: 15px;
+  }
+
+  .graphics-header h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  /* Hide source column */
+  .table-header .col-source,
+  .table-row .col-source {
+    display: none;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 80px 3fr 120px 120px 120px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .graphics-container {
+    padding: 20px 20px;
+  }
+
+  .graphics-header h1 {
+    font-size: 36px;
+  }
+
+  .bio,
+  .contact-info {
+    font-size: 16px;
+  }
+
+  /* Stack table on mobile */
+  .table-header {
+    display: none;
+  }
+
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .col-img {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .project-thumbnail {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+  .thumbnail-placeholder {
+    width: 100%;
+    height: 100%;
+  }
+
+  .col-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .col-source {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .col-coding,
+  .col-visuals,
+  .col-reporting {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .col-coding::before {
+    content: "CODING:";
+    font-size: 11px;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+  }
+
+  .col-visuals::before {
+    content: "VISUALS:";
+    font-size: 11px;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+  }
+
+  .col-reporting::before {
+    content: "REPORTING:";
+    font-size: 11px;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .graphics-container {
+    padding: 15px;
+  }
+
+  .graphics-header h1 {
+    font-size: 28px;
+  }
+
+  .bio,
+  .contact-info {
+    font-size: 14px;
+  }
+}

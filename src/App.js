@@ -1,13 +1,20 @@
 // App.js
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './components/Main';
+import Graphics from './components/Graphics';
 import './components/styles.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <Main />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/graphics" element={<Graphics />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
