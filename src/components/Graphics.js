@@ -22,10 +22,10 @@ const Graphics = () => {
       <header className="graphics-header">
         <h1>🔮</h1>
         <p className="bio">
-          Maxim is a frontend software engineer at The Washington Post.
+          Maxim is a frontend software <br className="mobile-break" /> engineer at The Washington Post.
         </p>
         <p className="contact-info">
-           Here are data visualization / graphics projects he's worked on:
+           Here are <span className="desktop-text">data visualization</span><span className="mobile-text">datavis</span> / graphics projects he's worked on:
         </p>
       </header>
 

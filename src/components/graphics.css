@@ -71,6 +71,20 @@ body:has(.graphics-container) {
   text-decoration: underline;
 }
 
+/* Mobile line breaks - hidden by default */
+.mobile-break {
+  display: none;
+}
+
+/* Text switching for mobile/desktop */
+.mobile-text {
+  display: none;
+}
+
+.desktop-text {
+  display: inline;
+}
+
 /* Portfolio Table */
 .portfolio-table {
   width: 100%;
@@ -231,6 +245,39 @@ body:has(.graphics-container) {
 
   .graphics-header h1 {
     font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .graphics-container {
+    padding: 20px 30px;
+  }
+
+  .graphics-header h1 {
+    font-size: 32px;
+  }
+
+  .bio {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .contact-info {
+    font-size: 15px;
+  }
+
+  /* Show line breaks on mobile */
+  .mobile-break {
+    display: inline;
+  }
+
+  /* Switch text on mobile */
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: inline;
   }
 }
 
