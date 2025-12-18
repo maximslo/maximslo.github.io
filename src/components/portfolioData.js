@@ -77,4 +77,15 @@ export const portfolioProjects = [
     thumbnail: "",
     video: "/videos/instruments.mov"
   },
+  {
+    id: 8,
+    title: "An Extremely Detailed Map of the 2024 Election",
+    source: "The New York Times",
+    coding: 80,
+    visuals: 60,
+    whatIDid: "data wrangling, skyscraper (internal scraping tool)",
+    link: "https://www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html",
+    thumbnail: "",
+    video: "/videos/detailed.mov"
+  },
 ];
